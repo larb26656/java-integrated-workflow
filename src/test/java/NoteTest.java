@@ -82,6 +82,7 @@ class NoteTest {
 	@DisplayName("given write reading note async should success")
 	void writeAsyncNoteShouldSuccess() {
 		TextFile textFile = mock(TextFile.class);
+
 		BirthdayChecker birthdayChecker = mock(BirthdayChecker.class);
 		when(birthdayChecker.isBirthday()).thenReturn(true);
 		Note note = new Note(textFile, birthdayChecker);
